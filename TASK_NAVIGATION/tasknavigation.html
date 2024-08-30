@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskNavigation Admin</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JAVASCRIPT/script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>TaskNavigation Admin</h2>
+        <ul>
+            <li><a href="#dashboard"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="#users"><i class="fas fa-user"></i> Gestão de Usuários</a></li>
+            <li><a href="#tasks"><i class="fas fa-sticky-note"></i> Gestão de Tarefas</a></li>
+            <li><a href="#notifications"><i class="fas fa-bell"></i> Notificações</a></li>
+            <li><a href="#reports"><i class="fas fa-clipboard"></i> Relatórios</a></li>
+            <li><a href="#settings"><i class="fas fa-cog"></i> Configurações</a></li>
+            <li><a href="#support"><i class="fas fa-question-circle"></i> Suporte</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="profile">
+                <img src="IMG/profile.png" alt="Profile">
+                <span>Admin</span>
+            </div>
+        </div>
+        <div id="dashboard" class="content">
+            <h2>Dashboard</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <h3>Usuários Ativos</h3>
+                    <p id="active-users">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Tarefas Criadas</h3>
+                    <p id="tasks-created">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Tarefas Concluídas</h3>
+                    <p id="tasks-completed">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Projetos em Andamento</h3>
+                    <p id="ongoing-projects">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Notificações Pendentes</h3>
+                    <p id="pending-notifications">0</p>
+                </div>
+            </div>
+            <div class="charts">
+                <canvas id="tasksChart" width="400" height="200"></canvas>
+                <canvas id="statusChart" width="400" height="200"></canvas>
+            </div>
+            <div class="notifications">
+                <h3>Notificações Importantes</h3>
+                <ul id="notifications-list">
+                    <li>Nenhuma notificação.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
